@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="../css/products.css">
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="../img/medicine.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>MyDrugs</title>
+  </head>
+  <body>
+    <div class="header"></div>
+
+    <!-- Section Home Start -->
+    <section id="home">
+      <div class="container home-container">
+        <div class="row">
+          <div class="left col-md-6 d-flex flex-column mt-auto">
+            <div class="home-title">
+              <h1
+                class="title"
+                onclick="typeText(document.querySelector('.title')), tiltCount()"
+              >
+                MyDrugs
+              </h1>
+            </div>
+
+            <p>
+              <i class="fas fa-check-circle fa-xs"></i> Get the experience of
+              buying drugs quickly and easily.
+            </p>
+            <p><i class="fas fa-user-secret"></i> 100% Anonymous.</p>
+
+            <!-- Botao Shop -->
+            <div class="shop-btn">
+              <div class="div1">
+                <h5>Shop</h5>
+              </div>
+              <div class="div2">
+                <h5>Now</h5>
+                <img src="../img/particles2.png">
+              </div>
+            </div>
+            <!-- Fim Botao Shop -->
+          </div>
+
+          <div class="right col-md-6 d-none d-lg-block">
+            <img src="../img/developer.svg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="divisor">
+        <img src="../img/page-divisors/waves.svg">
+      </div>
+
+
+
+    </section>
+    <!-- Section Home End -->
+
+    <section id="features">
+      <div class="pill-container pill">
+        <img src="../img/drug.png" />
+      </div>
+
+      <div class="container features-container">
+        <div class="left d-none d-lg-block">
+          <img src="../img/features-img.png" class="anime" />
+        </div>
+
+        <div class="right d-lg-block anime">
+          <div class="">
+            <h1 class="features-title">
+              Save your <span>time</span>, buy more!
+            </h1>
+          </div>
+
+          <p>
+            <i class="fas fa-shipping-fast"></i> Faster and more discreet
+            delivery.
+          </p>
+          <p>
+            <i class="fas fa-star"></i> The best suppliers on the continent.
+          </p>
+          <p>
+            <i class="fas fa-search-dollar"></i> The best prices of the market.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shopContainer">
+
+      <div class="divisor2">
+        <img src="../img/page-divisors/waves.svg">
+      </div>
+
+      <div class="shop-title">
+        <h1>Best sellers</h1>
+      </div>
+
+      <!-- Start Best Sellers Container  -->
+      <div class="products-container anime" id="bestsellers-link">
+        <div class="mitsubishi"></div>
+
+        <div class="supermario"></div>
+
+        <div class="superman"></div>
+
+        <div class="rockandroll"></div>
+      </div>
+      <!-- End Best Sellers Container -->
+
+    </section>
+
+    <audio src="../sounds/pill_open.mp3" id="pillSound"></audio>
+
+    <div class="popup" id="popup">
+      <div class="pop-icon">
+        <i class="fas fa-exclamation-triangle fa-3x"></i>
+      </div>
+
+      <div class="pop-text">
+        <div class="pop-text-title">
+          <p>Aviso Importante!</p>
+        </div>
+        <div class="pop-text-subtitle">
+          <p class="popup-write">
+            Este é apenas um site inspirado na série "Como Vender Drogas Online
+            Rápido", com fins educativos sem quaisquer relações ou intenções a
+            mais.
+          </p>
+        </div>
+      </div>
+
+      <div class="pop-btn">
+        <button class="pop-btn-id" onclick="closePopup()">X</button>
+      </div>
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/soundPlay.js"></script>
+    <script src="../js/tiltSite.js"></script>
+    <script src="../js/pillAnime.js"></script>
+    <script src="../js/popup.js"></script>
+    <script src="../js/animeScroll.js"></script>
+    <script src="../js/textWriter.js"></script>
+    <script src="../js/textWriter2.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".header").load("../components/header.html");
+
+        // Products - Best Seller
+        $(".mitsubishi").load("../components/products/mitsubishi.html")
+        $(".supermario").load("../components/products/supermario.html")
+        $(".superman").load("../components/products/superman.html")
+        $(".rockandroll").load("../components/products/rockandroll.html")
+        
+      });
+    </script>
+
+    <script>
+      $(".shop-btn").click(function (e){
+        window.location.href = "shop.html"
+      })
+    </script>
+
+  </body>
+</html>

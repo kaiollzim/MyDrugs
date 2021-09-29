@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags Obrigatórias -->
+        <meta charset="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/pages/shop.css" />
+        <link rel="stylesheet" href="../css/header-footer.css" />
+        <link rel="stylesheet" href="../css/products.css">
+    
+        <!-- Bootstrap CSS -->
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous"
+        />
+    
+        <!-- FavIcon -->
+        <link rel="shortcut icon" href="../img/medicine.ico" type="image/x-icon">
+    
+        <!-- Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous"
+        />
+    
+        <!-- jQuery -->
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"
+        ></script>
+    
+        <!-- Owl Carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+        <title>MyDrugs - Shop</title>
+      </head>
+<body>
+
+    <header class="header"></header>
+
+    <section id="home">
+
+        <div class="shop-title">
+            <h1>Shop</h1>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <div class="search-btn"><i class="fas fa-search"></i></div>
+            </div>
+        </div>
+
+             <!-- Shop Container  -->
+      <div class="products-container">
+
+        <div class="divisor">
+            <img src="../img/page-divisors/waves.svg">
+        </div>
+
+        <h2>All Ecstasy's</h2>
+
+        <div class="product-list owl-carousel">
+            <div class="supermario"></div>
+    
+            <div class="superman"></div>
+    
+            <div class="rockandroll"></div>
+
+            <div class="mitsubishi"></div>
+
+            <div class="bulls"></div>
+
+            <div class="package"></div>
+        </div>
+
+        <h2>Blue Ecstasy</h2>
+
+        <div class="product-list owl-carousel anime">
+            <div class="supermario"></div>
+    
+            <div class="superman"></div>
+    
+            <div class="rockandroll"></div>
+
+            <div class="package"></div>
+        </div>
+
+        <h2>Grenn Ecstasy</h2>
+
+        <div class="product-list owl-carousel anime">
+            <div class="mitsubishi"></div>
+        </div>
+
+        <h2>Purple Ecstasy</h2>
+
+        <div class="product-list owl-carousel anime">
+            <div class="bulls"></div>
+        </div>
+
+
+
+
+
+      </div>
+      <!-- End Shop Container -->
+
+    </section>
+    
+
+
+    <script src="../js/animeScroll.js"></script>
+
+    <script>
+        $(document).ready(function () {
+          $(".header").load("../components/header.html");
+
+          // Products
+          $(".mitsubishi").load("../components/products/mitsubishi.html")
+           $(".supermario").load("../components/products/supermario.html")
+           $(".superman").load("../components/products/superman.html")
+           $(".rockandroll").load("../components/products/rockandroll.html")
+           $(".bulls").load("../components/products/bulls.html")
+           $(".package").load("../components/products/package.html")
+        });
+      </script>
+
+      <script>
+          $('.owl-carousel').owlCarousel({
+             loop: false,
+             stagePadding: 130,
+             items:4,
+
+})
+      </script>
+</body>
+</html>

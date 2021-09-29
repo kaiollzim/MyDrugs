@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#home {
+    height: 600px;
+    overflow: hidden;
+    z-index: 1;
+
+    background: rgb(60,37,83);
+    background: -moz-linear-gradient(270deg, rgba(60,37,83,1) 0%, rgba(42,46,61,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(60,37,83,1) 0%, rgba(42,46,61,1) 100%);
+    background: linear-gradient(270deg, rgba(60,37,83,1) 0%, rgba(42,46,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3c2553",endColorstr="#2a2e3d",GradientType=1);
+}
+
+#features {
+    background: #e2e2e2;
+    height: 680px;
+}
+
+#shopContainer {
+    height: 675px;
+    background-image: linear-gradient(to right top, #3c2553, #342950, #2e2b4b, #2b2d44, #2a2e3d);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- HOME -----  */
+
+.home-container {
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.home-container .title {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 40px;
+    cursor: default;
+    color: #e4e4e4;
+}
+
+.home-container .title::after {
+    content: '|';
+    margin-left: 5px;
+    animation: piscar 1s infinite;
+}
+
+.home-container .title:hover {
+    cursor: text;
+}
+
+.home-container p { 
+    font-size: 24px;
+    cursor: default;
+    margin: 10px;
+    color: #e4e4e4;
+}
+
+
+/* Botao Shop  */
+.left .shop-btn {
+    display: flex;
+    position: relative;
+
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 50px;
+
+    background: transparent;
+    transition: 1s;
+
+}
+
+.shop-btn .div1 {
+    background-color: transparent;
+    height: 100%;
+    width: 50%;
+    border-radius: 50px 0 0 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #e2e2e2 2px solid;
+    transition: .5s;
+}
+
+.shop-btn .div2 {
+    background-color: #e2e2e2;
+    height: 100%;
+    width: 50%;
+    border-radius: 0 50px 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #e2e2e2 2px solid;
+    transition: .5s;
+}
+
+.shop-btn .div2 img {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    opacity: 0;
+}
+
+.shop-btn h5 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.div1 h5 {
+    color: #e2e2e2;
+    margin-top: 8px;
+    margin-left: 35px;
+}
+.div2 h5 {
+    color: #2A2E3D;
+    margin-top: 8px;
+    margin-right: 35px;
+}
+
+.shop-btn:hover .div1 {
+    transform: translate3d(-5px, -3px, 0) rotate(-5deg);
+    transition: .5s;
+}
+.shop-btn:hover .div2 {
+    transform: translate3d(5px, 3px, 0) rotate(5deg);
+    transition: .5s;
+}
+.shop-btn:hover .div2 img {
+    animation: pillBroken .8s linear;
+}
+
+
+/* Imagem Home */
+
+.right img {
+    margin-left:100px;
+    margin-top: 50px;
+    max-width: 350px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+
+    animation: float 7s infinite;
+}
+
+/* Home Divisor */
+
+.divisor {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.divisor img {
+    transform: scaleY(-1);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+}
+
+
+/* ----- Features Container ----- */
+
+.features-container {
+    display: flex;
+}
+
+.features-container .left img {
+    margin-top: 150px;
+    margin-right: 150px;
+    
+    max-width: 500px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+}
+
+.features-container .left img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.features-container .right {
+    margin-top: 100px;
+    height: 100%;
+    width: 80%;
+}
+
+.features-container .right .features-title {
+    font-weight: bold;
+    font-size: 60px;
+    color: #2A2E3D;
+    cursor: default;
+    margin-bottom: 60px;
+}
+
+.features-container .right .features-title span {
+    color: #CB00FF;
+}
+
+.features-container .right p {
+    font-size: 24px;
+    color: #3C2553;
+    cursor: default;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* ----- Shop Container -----  */
+
+.divisor2 {
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+
+.divisor2 img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+}
+
+.shop-title {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.shop-title h1{
+    color: #e2e2e2;
+    font-size: 65px;
+    letter-spacing: 4px;
+}
+
+.products-container {
+    width: 90%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- Animations ----- */
+
+@keyframes float {
+    0%, 100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -40px, 0);
+    }
+}
+
+
+@keyframes piscar {
+    0%, 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform:  rotate(30deg)
+    }
+
+    100% {
+        transform:  rotate(10deg) translate3d(-70px, 200px, 0);
+
+    }
+}
+
+@keyframes vibrate {
+    0% {
+              transform: translate(0);
+    }
+    20% {
+              transform: translate(-2px, 2px);
+    }
+    40% {
+              transform: translate(-2px, -2px);
+    }
+    60% {
+              transform: translate(2px, 2px);
+    }
+    80% {
+              transform: translate(2px, -2px);
+    }
+    100% {
+              transform: translate(0);
+    }
+}
+
+@keyframes navbarFall {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(10px, 20px, 0);
+    }
+}
+
+@keyframes pillBroken {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(5deg) scale(0, 0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    90% {
+        transform: translate3d(-70px, 35px, 0) rotate(-50deg) scaleY(-0.5);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+  
+/* Tilt EasterEgg  */
+.vibrate {
+    animation: vibrate 0.4s linear infinite both;
+}
+
+.blur {
+    filter: blur(0.7px);
+}
+
+.lsd-color {
+    background-image: url('../img/LSD-Colors.jpg') !important;
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.nav-fall {
+    z-index: 5;
+    animation: navbarFall 3s forwards;
+}
+
+
+/* Scroll Anim */
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .3s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* Pill Fall */
+.pill-container img {
+    position: absolute;
+    max-height: 100px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+
+    right: 0;
+}
+
+.pill {
+    opacity: 0;
+}
+
+.pill-anim {
+    opacity: 1;
+    animation: fall 4s alternate infinite;
+} 
+
+
+
+/* ----- Alert Message ----- */
+.popup {
+    opacity: 1;
+    position: absolute;
+    width: 80vh;
+    height: 20vh;
+    bottom: 0;
+    right: 10px;
+    margin-bottom: 5vh;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    animation: notification 2s normal forwards;
+    animation-iteration-count: 1;
+    animation-delay: 1.5s;
+    transition: 0.5s;
+    display: flex;
+}
+
+.popup:hover {
+    transform: scale(1.02, 1.02);
+    transition: 0.5s;
+  }
+
+.popup .pop-icon {
+    height: 100%;
+    width: 20%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .popup .pop-icon .pop-icon-img {
+    height: 50%;
+    width: 50%;
+}
+  
+.popup .pop-text {
+    height: 100%;
+    width: 60%;
+    text-align: left;
+}
+  
+.popup .pop-text .pop-text-title {
+    font-size: 20px;
+    color: #181818;
+    padding-top: 15px;
+    padding-left: 4px;
+}
+  
+.popup .pop-text .pop-text-subtitle {
+    font-size: 15px;
+    color: #707070;
+    padding-left: 4px;
+}
+.popup .pop-text .pop-text-subtitle .popup-write::after {
+    content: "|";
+    margin-left: 5px;
+    animation: piscar .5s infinite 2s;
+}
+  
+.popup .pop-btn {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.popup .pop-btn .pop-btn-id {
+    border: transparent;
+    background-color: rgb(202, 202, 202, 0.3);
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    font-weight: lighter;
+    cursor: pointer;
+    transition: 0.2s;
+}
+  
+.popup .pop-btn .pop-btn-id:hover {
+    background-color: rgb(202, 202, 202, 0.8);
+    transition: 0.2s;
+}
